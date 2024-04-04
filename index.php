@@ -2,11 +2,22 @@
 
 echo"<pre>";
 
-$lista[] = 10;
-$lista[] = 11;
-$lista[] = 12;
+$lista["A"] = 10;
+$lista["B"] = 11;
+$lista["C"] = 12;
+$lista["D"] = 13;
+$lista["E"] = 14;
 
-for ($i=0; $i < count($lista); $i++);
+$lista["alunos"] = array("matricula"=>1,"email"=>"aluno@etecjk");
+$lista["materias"] = array("DES I","PWII");
+
+
+for ($i=0; $i < count($lista); $i++); {
+
+    echo "Posição;".$i. "valor:".$lista[$i]. "<br>";
+}
+
+foreach ($lista as $valor){}
 
 var_dump($lista);
 
